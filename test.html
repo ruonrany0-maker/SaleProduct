@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaleAcessory - Fashion Accessories</title>
+    <link rel="shortcut icon" href="imges/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="SaleProducts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* Additional CSS to enhance the design */
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        .product-img {
+            height: 200px;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .product-price {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .product-old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-left: 8px;
+            font-size: 0.9rem;
+        }
+        .discount-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        .category-title {
+            color: #333;
+            border-bottom: 2px solid #f0ad4e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid first">
+        <div class="container">
+            <div class="row">
+                <div class="top">
+                    <div class="menu">
+                        <img src="imges/logo.png" alt="SaleAcessory Logo">
+                        <div class="input">
+                            <input type="text" name="search" id="search" placeholder="Search our products">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid second">
+        <div class="container">
+            <div class="row">
+                <div class="under">
+                    <ul>
+                        <li class="show">
+                            <a href="#">
+                                <i class="fa-solid fa-bars"></i>
+                                <span>Menu</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>Bags</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fa-solid fa-shoe-prints"></i>
+                                <span>Shoes</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fa-solid fa-shirt"></i>
+                                <span>Clothes</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <span>Beauty</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fa-solid fa-gift"></i>
+                                <span>Gifts</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="tel:+85590979057">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+855 909 790 57</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Cart</span>
+                                <span class="badge bg-danger rounded-pill">3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span>Sign in</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container third">
+        <div class="row">
+            <div class="col-xxl-12 box-txt">
+                <h4 class="category-title">Featured Products</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container body">
+        <div class="row item-box">
+            <!-- Product 1 -->
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="position-relative">
+                        <div class="product-img">
+                            <i class="fa-solid fa-bag-shopping fa-3x"></i>
+                        </div>
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">Leather Handbag</div>
+                        <p class="text-muted small">Premium quality leather with multiple compartments</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="product-price">$79.99 <span class="product-old-price">$99.99</span></div>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="position-relative">
+                        <div class="product-img">
+                            <i class="fa-solid fa-shoe-prints fa-3x"></i>
+                        </div>
+                        <span class="discount-badge">-15%</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">Running Shoes</div>
+                        <p class="text-muted small">Comfortable athletic shoes for daily wear</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="product-price">$64.99 <span class="product-old-price">$76.99</span></div>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="position-relative">
+                        <div class="product-img">
+                            <i class="fa-solid fa-shirt fa-3x"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">Casual T-Shirt</div>
+                        <p class="text-muted small">100% cotton, available in multiple colors</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="product-price">$24.99</div>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="position-relative">
+                        <div class="product-img">
+                            <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
+                        </div>
+                        <span class="discount-badge">-30%</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-title">Beauty Kit</div>
+                        <p class="text-muted small">Complete makeup set with 12 shades</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="product-price">$49.99 <span class="product-old-price">$71.99</span></div>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(imges/image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;        
+    background-attachment: fixed;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .menu-bar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.box .menu-bar h1{
+    color: chocolate;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .menu{
+    width: 70%;
+    display: flex;
+    justify-content: right;
+}
+.box .menu ul{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+}
+.box .menu ul li a{
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+.box .menu ul li a:hover{
+    color: chocolate;
+}
+.box .menu .box-search{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .menu .box-search .search{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid chocolate;
+    border-radius: 5px;
+}
+.box .menu .box-search input{
+    width: 80%;
+    height: 100%;
+    outline: none;
+    padding: 7px;
+    background-color: rgba(240, 248, 255, 0.068);
+    border: none;
+    color: #ffffff;
+}
+.box .menu .box-search input::placeholder{
+    color: #e5e5e5;
+}
+.box .menu .box-search span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    font-size: 17px;
+    background-color: chocolate;
+    cursor: pointer;
+    color: #e5e5e5;
+}
+.box .menu .box-search span:hover{
+    transform: scale(1.1);
+}
+.box-container .box-content{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    font-size: 25px;
+}
+.box-container .box-content h1{
+    font-size: 50px;
+}
+.box-container .box-content p{
+    color: rgb(232, 232, 232);
+}
+.box-container .box-content .txt{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 100%;
+}
+.box-container .box-login{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-container .box-login .login{
+    width: 50%;
+    height: 80%;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-container .box-login .login .box-txt{
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 80%;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+.box-container .box-login .login .btn1{
+    background-color: #ffffff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: chocolate;
+}
+.box-container .box-login .login .btn2{
+    border-radius: 0;
+}
+.box-container .box-login .login .btn3{
+    border-radius: 0%;
+}
+.box-container .box-login .login .box-txt .email{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.box-container .box-login .login .box-txt .email .txt-email{
+    width: 100%;
+    height: 40%;
+}
+.box-container .box-login .login .box-txt .email input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0 10px;
+    height: 60%;
+    background-color: #ffffff00;
+    border: 1px solid chocolate;
+    border-radius: 10px;
+}
+.box-container .box-login .login .box-txt button:hover{
+    background-color: rgb(209, 95, 14);
+}
+.box-container .box-login .login .box-txt button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: chocolate;
+}
+.box-container .box-login .login .btn4{
+    margin-top: 40px;
+}
+.box-container .box-login .login .btn5{
+    border-radius: 0;
+}
+.box-container .box-login .login .btn6{
+    border-radius: 0;
+    margin-top: 10px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.icon{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon ul{
+    display: flex;
+    padding: 0%;
+}
+.icon ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    color: chocolate;
+}
+.icon ul li a:hover{
+    color: rgb(222, 127, 59);
+}
